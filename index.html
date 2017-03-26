@@ -24,45 +24,34 @@
 <!--Logo image in the browser tab-->
 <link rel="icon" href="images/logo.png">
 
-<title>PrettyButtons</title>
+<title>Pretty Buttons</title>
 	
 </head>
 
 <body>
-	
-	<header class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Pretty Buttons</h1>
-			</div>
-		</div>
-	</header>
-	
-	
-	<main class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<figure>
-					<img src="images/logo.png" alt="Regular Buttons" width="200" height="200" title="Regular Buttons">
-						<figcaption>Regular</figcaption>
-				</figure>
-			</div>
-			
-			<div class="col-sm-6">
-				<figure>
-					<img src="images/logo.png" alt="Regular Buttons" width="200" height="200" title="Regular Buttons">
-						<figcaption>Animated</figcaption>
-				</figure>
-			</div>
-		</div>
-	</main>
-	
-<!--
-	<figure class="item">
-    <img src=""/>
-    <figcaption class="caption">Text below the image</figcaption>
-</figure>
--->
+    
+    <div data-role="page">
+    
+      <header data-role="header">
+        <h1>Pretty Buttons</h1>
+      </header>
+
+          <main data-role="main" class="ui-content">
+            <figure>
+                <img src="images/logo.png" alt="Regular Buttons" title="Regular Buttons" width="200" height="200" >
+                    <figcaption>Regular</figcaption>
+            </figure>
+            
+                <figure>
+                    <img src="images/logo.png" alt="Animated Buttons" title="Animated Buttons" width="200" height="200" >
+                        <figcaption>Animated</figcaption>
+                </figure>
+          </main>
+
+              <footer data-role="footer">
+                <h2>Footer Text</h2>
+              </footer>
+     </div> 
 	
 </body>
 </html>

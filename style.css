@@ -4,7 +4,9 @@
 /*General Styling*/
 body
 {
-	background-color:#ffb3ec;	
+	background-color:#ffb3ec;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 h1
@@ -35,7 +37,7 @@ main div button
 	font-size: 20px;
 /*	margin:20%;*/
 	border-radius: 20px;
-	box-shadow: 10px white;
+/*	box-shadow: 10px white;*/
 }
 
 main div img
@@ -43,7 +45,7 @@ main div img
 /*	padding:20px;*/
 	margin-left:20%;
 	border-radius: 20px;
-	box-shadow: 10px white;
+/*	box-shadow: 10px white;*/
 /*	text-align: center;*/
 }
 

@@ -8,8 +8,13 @@ $(document).ready(function(){
 	$( function() {
 		$( "#button_regular" ).resizable();
 		} );
+});	
+
+
+	
 	
 //		var buttonRegular = $('#button_regular').height();
+
 //		$(function(){
 //			$('#button_regular').on(function(){
 //				$(this).animate({height: '400', width: '400'}, 'slow');
@@ -17,7 +22,9 @@ $(document).ready(function(){
 //				$(this).animate({height: buttonRegular, width: buttonRegular},'slow');
 //			});
 //		});
-	
+
+
+
 //		function reCenterButton() {
 //		$("#button_regular").position({
 //			"my": "center center",
@@ -25,7 +32,7 @@ $(document).ready(function(){
 //			"of": $("#button_box")
 //		});
 //	};
-});
+
 //	$(function(){
 //	  // Bind the swipeHandler callback function to the swipe event on div.box
 //	  $( "#button_regular" ).on( "swipe", swipeHandler );

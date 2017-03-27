@@ -36,6 +36,37 @@ figure
 
 footer
 {
-	padding-top: 40px;
+	padding-top: 60px;
 }
+
+#slider
+{
+	width: 200px;
+	margin-left: 50%;	
+}
+
+header
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#button_regular
+{
+	padding: 20px;
+	width: 200px;
+	height:150px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 

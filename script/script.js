@@ -4,4 +4,8 @@ $(document).ready(function(){
 	$( function() {
 		$( "#slider" ).slider();
 	  } );
+	
+	  $( function() {
+    	$( "#button_regular" ).resizable();
+  		} );
 });

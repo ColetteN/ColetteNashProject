@@ -6,26 +6,22 @@ body
 {
 	background-color:#ffb3ec;
 }
-
 h1
 {
 	text-align: center;
 	font-size: 40px;
 	color: #800060;	
 }
-
 h2
 {
 	color:#800060;
 	text-align: center;
 	font-size: 30px;
 }
-
 h3
 {
 	color:#800060;
 }
-
 figure
 {
 	text-align: center;
@@ -33,35 +29,75 @@ figure
 	font-size: 24px;
 	padding-top: 40px;
 }
-
 footer
 {
 	padding-top: 60px;
 }
-
-#slider
-{
-	width: 200px;
-	margin-left: 50%;	
-}
-
 header
 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+/*Button Preview*/
+/*
+#button_box { 
+	height: 200px; 
+	width: 300px;
+	padding-bottom: 100px;
+	position: relative; 
+	float: left; 
+	background: #ffe6ff;
+	-webkit-border-radius: 5px;
+   	-moz-border-radius: 5px;
+   	border-radius: 5px;
+	box-shadow: 0px 1px 1px white;
+}	
+*/
+
+/*The styling centre*/
 #button_regular
 {
-	padding: 20px;
-	width: 200px;
-	height:150px;
+	width: 100px;
+	height:50px;
 	border-radius: 10px;
 	text-align: center;
+	margin-left: 10%;
 }
-
-
-
+#slider_border
+{
+	width: 200px;
+	height:20px;
+	margin-left: 45%;	
+}
+#slider_padding
+{
+	width: 200px;
+	height:20px;
+	margin-left: 45%;	
+}
+#slider_font
+{
+	width: 200px;
+	height:20px;
+	margin-left: 45%;	
+}
+#slider_shadow
+{
+	width: 200px;
+	height:20px;
+	margin-left: 45%;	
+}
+form label
+{
+	font-size: 20px;
+	color:#800060; 
+	margin-left: 45%;	
+}
+form input
+{
+	margin-left: 45%;	
+}
 
 
 

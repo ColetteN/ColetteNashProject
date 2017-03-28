@@ -6,6 +6,10 @@ $(document).ready(function(){
 	  } );
 	
 	$( function() {
+		$( "#button_regular" ).button();
+		} );
+	
+	$( function() {
 		$( "#button_regular" ).resizable();
 		} );
 });	

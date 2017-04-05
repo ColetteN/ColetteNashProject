@@ -43,44 +43,40 @@ header
 #button_regular
 {
 	width: 120px;
-	height:80px;
-	/*border-radius: 10px;*/
+	height:60px;
+	padding:15px;
+	background-color:#e0e0eb;
 	text-align: center;
 	margin-left: 40%;
 	font-size: 20px;
 	color: blueviolet;
-	border: solid 2px purple;
+	border: solid 2px black;
 }
 .slider
 {
 	width: 200px;
 	height:20px;
-	/*margin-left: 45%;*/
 }
 .name
 {
-	/*margin-left: 45%;*/
+	font-size: 20px;
+	color:#800060;
 }
 button
 {
-	margin-left: 45%;
+	margin-left: 55%;
 	margin-top:20px;
-}
-input
-{
-	/*margin-left: 45%;*/
+	color:purple;
 }
 form label
 {
 	font-size: 20px;
 	color:#800060;
-	/*margin-left: 45%;*/
 }
 form input
 {
 	width:200px;
 	height:30px;
-	/*margin-left: 45%;*/
 }
 
 

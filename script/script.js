@@ -18,10 +18,10 @@ $(document).ready(function(){
 		$( "#button_regular" ).resizable();
 		} );
 
-//Changing the border on the button using the slider		
+	//Changing the border on the button using the slider		
 		$("#radius").slider({
 			animate:"fast",
-			value:50,
+			value:1,
 			min:0,
 			max:100,
 			step:2,
@@ -31,10 +31,10 @@ $(document).ready(function(){
          $("#button_regular").css('border-radius', slider.value + '%');
 		}
 		
-//Changing the size of the button using the slider		
+	//Changing the size of the button using the slider		
 		$("#size").slider({
 			animate:"fast",
-			value:50,
+			value:1,
 			min:0,
 			max:100,
 			step:2,
@@ -45,34 +45,54 @@ $(document).ready(function(){
 		 $("#button_regular").css('height', slider.value + '%');
 		}
 		
-//Changing the size of the border using the slider		
+	//Changing the size of the font using the slider		
+		$("#font").slider({
+			animate:"fast",
+			value:1,
+			min:5,
+			max:100,
+			step:20,
+			slide:changeFont
+    });
+		function changeFont (event, slider) {
+         $("#button_regular").css('font-size', slider.value + '%');
+		}
+		
+	//Changing the size of the border using the slider		
 		$("#border").slider({
 			animate:"fast",
-			value:50,
-			min:0,
+			value:1,
+			min:4,
 			max:100,
 			step:2,
 			slide:changeBorder
     });
 		function changeBorder (event, slider) {
-         $("#button_regular").css('border', slider.value + '%');
+         $("#button_regular").css({
+			 border:'4px black'}, 
+			 slider.value + '%');
 		}
 		
-//Changing the size of the border using the slider		
+	//Changing the size of the border using the slider		
 		$("#shadow").slider({
 			animate:"fast",
-			value:50,
-			min:0,
+			value:1,
+			min:5,
 			max:100,
 			step:2,
 			slide:changeShadow
     });
 		function changeShadow (event, slider) {
-         $("#button_regular").css('box-shadow', 'white', '10', slider.value + '%');
+         $("#button_regular").css({ 
+		 boxShadow: '5px 5px 5px white' }, 
+		 slider.value + '%');
 		}
 		
-		//function update(jscolor) {
-//    $('#button_regular').css("color", "#" + jscolor);
+		
+		//$("#button_regular").onclick()
+//		function update(jscolor) {
+//		 document.getElementById('button_regular').style.backgroundColor = '#' + jscolor;
+//    	//$('#button_regular').css('background-color', "#" + jscolor);
 //	}
 });	
 

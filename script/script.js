@@ -45,6 +45,32 @@ $(document).ready(function(){
 		 $("#button_regular").css('height', slider.value + '%');
 		}
 		
+//Changing the size of the border using the slider		
+		$("#border").slider({
+			animate:"fast",
+			value:50,
+			min:0,
+			max:100,
+			step:2,
+			slide:changeBorder
+    });
+		function changeBorder (event, slider) {
+         $("#button_regular").css('border', slider.value + '%');
+		}
+		
+//Changing the size of the border using the slider		
+		$("#shadow").slider({
+			animate:"fast",
+			value:50,
+			min:0,
+			max:100,
+			step:2,
+			slide:changeShadow
+    });
+		function changeShadow (event, slider) {
+         $("#button_regular").css('box-shadow', 'white', '10', slider.value + '%');
+		}
+		
 		//function update(jscolor) {
 //    $('#button_regular').css("color", "#" + jscolor);
 //	}

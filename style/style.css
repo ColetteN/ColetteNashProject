@@ -42,9 +42,9 @@ header
 /*The styling section*/
 #button_regular
 {
-	width: 200px;
-	height:100px;
-	border-radius: 10px;
+	width: 120px;
+	height:80px;
+	/*border-radius: 10px;*/
 	text-align: center;
 	margin-left: 40%;
 	font-size: 20px;
@@ -55,31 +55,32 @@ header
 {
 	width: 200px;
 	height:20px;
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 }
 .name
 {
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 }
 button
 {
 	margin-left: 45%;
+	margin-top:20px;
 }
 input
 {
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 }
 form label
 {
 	font-size: 20px;
 	color:#800060;
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 }
 form input
 {
 	width:200px;
 	height:30px;
-	margin-left: 45%;
+	/*margin-left: 45%;*/
 }
 
 

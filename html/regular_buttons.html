@@ -90,7 +90,7 @@
                         </select>
                 <br><br> 
 					<div class="name">Colour</div>
-               			<input class="jscolor" value="ab2567" id="colour">
+               			<input class="jscolor {onFineChange:'update(this)'}" value="ab2567" id="colour">
                 <br>
             </div>   
             
@@ -98,6 +98,11 @@
         </div>
                     
     </main>
+    <script>
+		function update(jscolor) {
+			document.getElementById('button_regular').style.backgroundColor='#' + jscolor;
+		}
+	</script>
     
     <footer class="container">
         <div class="row">

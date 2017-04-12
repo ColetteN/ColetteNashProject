@@ -15,9 +15,20 @@ $(document).ready(function(){
 	
 	//Changes the size of the button by dragging with the mouse or by touch using the resizable() method
 	$( function() {
-		$( "#button_regular" ).resizable();
+		//$( "#button_regular" ).resizable();
 		$( "#button_regular" ).draggable();
-		} );
+		});
+		
+		$( "#button_regular" ).resizable({
+   		stop: function(event, ui) { ... }
+     	// not 100% sure it'll be event.target that you want,
+     	// inspect in console to double-check
+     	var width = $(event.target).width();
+     	var height = $(event.target).height();
+     	// do stuff with width & height
+});
+		
+		
 
 	//Changing the border on the button using the slider		
 		$("#radius").slider({
@@ -45,6 +56,20 @@ $(document).ready(function(){
          $("#button_regular").css('width', slider.value + 'px');
 		 $("#button_regular").css('height', slider.value + 'px');
 		}
+
+		//$("#sizeW").slider({
+//     	change: function (event, ui) {
+//          $("#button_regular").css("width", ui.value + "%");
+//     }
+//});
+//		
+//		$("#sizeH").slider({
+//     	change: function (event, ui) {
+//		  $("#button_regular").css("height", ui.value + "%");
+//     }
+//});
+
+		
 		
 	//Changing the size of the font using the slider		
 		$("#font").slider({
@@ -84,7 +109,7 @@ $(document).ready(function(){
     });
 		function changeShadow (event, slider) {
          $("#button_regular").css({ 
-		 boxShadow: '5px 5px 5px white' }, 
+		 boxShadow: '10px 10px 10px white' }, 
 		 slider.value + 'px');
 		}
 		

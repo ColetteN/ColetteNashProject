@@ -11,11 +11,7 @@
 <!-- Include meta tag to ensure proper rendering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Include jQuery Mobile -->
-<!--
-<link rel="stylesheet" href="../libs/jquery.mobile.custom/jquery.mobile.custom.theme.min.css">
-<script src="../libs/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
--->
+
 	
 <!--Pretty Buttons Stylesheet-->
 <link href="../style/style.css" rel="stylesheet" type="text/css">
@@ -24,8 +20,10 @@
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <!--Include the jQuery UI library-->
+<!--<script src="jquery.ui.touch-punch.min.js"></script>-->
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" type="text/css" media="all" />
+<!--<script src="jquery.ui.touch-punch.min.js"></script>-->
 	
 <!--JavaScript color picker-->
 <script src="../libs/jscolor/jscolor.js"></script>
@@ -79,12 +77,16 @@
             		<div class="slider" id="font"></div>
                 <br>
                 	<div class="name">Shadow</div>
-            		<div class="slider" id="shadow"></div> 
+            		<div class="slider" id="shadow"></div>
+                    <button id="delete">Delete</button>
+                    <!--/*<button onclick="deleteStyle('shadow');">Delete</button>*/-->
+                     
                 <br>
                 	<div class="name">Wallpaper</div>
                         <select id="wallpaper">
-                          <option value="images/floral1.png">Floral 1</option>
-                            <option value="images/floral2.png">Floral 2</option>
+                        	<option value="none">None</option>
+                          	<option value="images/floral1.png">Floral 1</option>
+                          	<option value="images/floral2.png">Floral 2</option>
                         </select>
                 <br><br> 
 					<div class="name">Colour</div>

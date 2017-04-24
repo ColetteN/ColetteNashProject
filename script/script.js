@@ -10,8 +10,10 @@ $(document).ready(function(){
 		$("#text").keyup(function(){
 			var valText = $(this).val();
 			$("#button_regular").text(valText);
-		})
-		.keyup();
+		});
+		//.keyup();
+		
+		
 	
 	//Changes the size of the button by dragging with the mouse or by touch using the resizable() method
 	$( function() {
@@ -57,19 +59,6 @@ $(document).ready(function(){
 		 $("#button_regular").css('height', slider.value + 'px');
 		}
 
-		//$("#sizeW").slider({
-//     	change: function (event, ui) {
-//          $("#button_regular").css("width", ui.value + "%");
-//     }
-//});
-//		
-//		$("#sizeH").slider({
-//     	change: function (event, ui) {
-//		  $("#button_regular").css("height", ui.value + "%");
-//     }
-//});
-
-		
 		
 	//Changing the size of the font using the slider		
 		$("#font").slider({
@@ -106,32 +95,31 @@ $(document).ready(function(){
 			max:100,
 			step:2,
 			slide:changeShadow
-    });
+    	});
+		
 		function changeShadow (event, slider) {
          $("#button_regular").css({ 
 		 boxShadow: '10px 10px 10px white' }, 
 		 slider.value + 'px');
 		}
 		
+		//$("#delete")
+		//$("#button_regular").removeAttr("style")
+		
+		    //function deleteStyle(button_regular) {
+//       			$("." + button_regular).remove();
+//
+//    		}
+		
+			//$(".name").remove("#delete");
 	
-	//Change image on button
-	//<form name="bgcolorForm">View my artwork:
-//    <select name="backArt" id="backArt">
-//        <option value="image1.gif">A Wedding Photo</option>
-//        <option value="image2.jpg">Beautiful Sunset</option>
-//        <option value="image3.gif">Canyon Lights</option>
-//        <option value="image4.gif">Morning Dew</option>
-//        <option value="image5.jpg">My Wife's Ugly Wart</option>
-//        <option value="image6.gif">My Beautiful Children</option>
-//    </select>
-//</form>
-
-$(function () {
-    $('#wallpaper').on('change', function () {
-        var wallPaper = $('option:selected', this).val();
-        $('#button_regular').css('background-image', 'url(' + wallPaper + ')');
-    });
-});
+	//Change image on button	
+	$(function () {
+		$('#wallpaper').on('change', function () {
+			var wallPaper = $('option:selected', this).val();
+			$('#button_regular').css('background-image', 'url(' + wallPaper + ')');
+		});
+	});
 
 
 		

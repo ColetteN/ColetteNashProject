@@ -87,6 +87,16 @@ $(document).ready(function(){
 			 slider.value + 'px');
 		}
 		
+	//Reset the border width button and the slider	
+	$("#delete").click( function(){
+			$("#button_regular").css('border-width', '1px');
+			$("#border").slider({
+				value:1
+   			});
+		});
+			
+			
+		
 	//Changing the shadow of the border using the slider		
 		$("#shadow").slider({
 			animate:"fast",
@@ -103,7 +113,9 @@ $(document).ready(function(){
 		 slider.value + 'px');
 		}
 		
-		//$("#delete")
+		
+			
+			
 		//$("#button_regular").removeAttr("style")
 		
 		    //function deleteStyle(button_regular) {
@@ -120,6 +132,12 @@ $(document).ready(function(){
 			$('#button_regular').css('background-image', 'url(' + wallPaper + ')');
 		});
 	});
+	
+	
+	//Dont let the form refresh my page
+	$("#buttonForm").submit(function(e) {
+    e.preventDefault();
+});
 
 
 		

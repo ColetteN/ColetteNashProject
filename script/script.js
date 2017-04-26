@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 		
 
-	//Changing the border on the button using the slider		
+	//Changing the border radius on the button using the slider		
 		$("#radius").slider({
 			animate:"fast",
 			value:1,
@@ -33,10 +33,19 @@ $(document).ready(function(){
          $("#button_regular").css('border-radius', slider.value + '%');
 		}
 		
+		//Reset the border radius and the slider to default value	
+		$("#resetRadius").click( function(){
+			$("#button_regular").css('border-radius', '1%');
+			$("#radius").slider({
+				value:1
+   			});
+		});
+		
+	//	
 	//Changing the size of the button using the slider		
 		$("#size").slider({
 			animate:"fast",
-			value:2,
+			value:1,
 			min:2,
 			max:26,
 			step:2,
@@ -46,21 +55,21 @@ $(document).ready(function(){
          $("#button_regular").css('padding', slider.value + '%');
 		}
 		
-		//Reset the border width and the slider to default value	
+		//Reset the padding and the slider to default value	
 		$("#resetSize").click( function(){
-			$("#button_regular").css('padding', '2%');
-			$("#border").slider({
-				value:2
+			$("#button_regular").css('padding', '1%');
+			$("#size").slider({
+				value:1
    			});
 		});
 
-		
+	//	
 	//Changing the size of the font using the slider		
 		$("#font").slider({
 			animate:"fast",
-			value:12,
-			min:10,
-			max:26,
+			value:20,
+			min:20,
+			max:50,
 			step:2,
 			slide:changeFont
     });
@@ -68,13 +77,22 @@ $(document).ready(function(){
          $("#button_regular").css('font-size', slider.value + 'px');
 		}
 		
+		//Reset the font size and the slider to default value	
+		$("#resetFont").click( function(){
+			$("#button_regular").css('font-size', '20px');
+			$("#font").slider({
+				value:20
+   			});
+		});
+		
+	//	
 	//Changing the size of the border using the slider		
 		$("#border").slider({
 			animate:"fast",
 			value:1,
-			min:0,
-			max:5,
-			step:0.5,
+			min:1,
+			max:20,
+			step:2,
 			slide:changeBorder
     });
 		function changeBorder (event, slider) {
@@ -109,7 +127,7 @@ $(document).ready(function(){
 		
 	//Reset the shadow and the slider to default value	
 		$("#resetShadow").click( function(){
-			$("#button_regular").css('border-width', '1px');
+			$("#button_regular").css('box-shadow', '0.5px 0.5px 0.5px white');
 			$("#shadow").slider({
 				value:1
    			});

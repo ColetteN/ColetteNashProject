@@ -11,9 +11,6 @@ $(document).ready(function(){
 			var valText = $(this).val();
 			$("#button_regular").text(valText);
 		});
-		//.keyup();
-		
-		
 	
 	//Changes the size of the button by dragging with the mouse or by touch using the resizable() method
 	$( function() {
@@ -39,16 +36,23 @@ $(document).ready(function(){
 	//Changing the size of the button using the slider		
 		$("#size").slider({
 			animate:"fast",
-			value:10,
-			min:0,
-			max:100,
+			value:2,
+			min:2,
+			max:26,
 			step:2,
 			slide:changeSize
     });
 		function changeSize (event, slider) {
-         $("#button_regular").css('width', slider.value + 'px');
-		 $("#button_regular").css('height', slider.value + 'px');
+         $("#button_regular").css('padding', slider.value + '%');
 		}
+		
+		//Reset the border width and the slider to default value	
+		$("#resetSize").click( function(){
+			$("#button_regular").css('padding', '2%');
+			$("#border").slider({
+				value:2
+   			});
+		});
 
 		
 	//Changing the size of the font using the slider		
@@ -102,6 +106,14 @@ $(document).ready(function(){
 		 boxShadow: '10px 10px 10px white' }, 
 		 slider.value + 'px');
 		}
+		
+	//Reset the shadow and the slider to default value	
+		$("#resetShadow").click( function(){
+			$("#button_regular").css('border-width', '1px');
+			$("#shadow").slider({
+				value:1
+   			});
+		});
 		
 	
 	//Chose an image for the button	

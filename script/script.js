@@ -1,16 +1,19 @@
 //Pretty Buttons JavaScript; Colette Nash K00212038
 
-$(document).ready(function(){  
+$(document).ready(function(){ 
+
+//Global Variable for the button text
+var valText="Click Me"
+ 
 	//creates the button and puts an initial text on it
 	$( function() {
-		$("#button_regular").button().text("Click Me");
+		$("#button_regular").button().text(valText);
 		} );
 	
 	//Dynamically changes the text on the button as you type using the keyup() method
 		$("#text").keyup(function(){
-			var valText = $(this).val();
+			valText = $(this).val();
 			$("#button_regular").text(valText);
-			$("#button_regular").css('text-align','center');
 		});
 	
 	//Changes the size of the button by dragging with the mouse or by touch using the resizable() method
@@ -18,8 +21,7 @@ $(document).ready(function(){
 		$( "#button_regular" ).resizable();
 		$( "#button_regular" ).draggable();
 		});
-
-		
+	
 
 	//Changing the border radius on the button using the slider		
 		$("#radius").slider({
@@ -144,18 +146,40 @@ $(document).ready(function(){
 	});
 	
 	//
-	//Choose font family for the button	
+	//Choose a font family for the button	
 	$(function () {
 		$('#fontFamily').on('change', function () {
 		$('#button_regular').css("font-family", $(this).val());
 		});
 	});
 	
+	//
+	//Generate HTML
+	$('#genHtml').click(function (){
+		$('#areaHtml').html('<button>' + valText +'</button>' );
+		});
 	
-	//Dont let the form refresh my page
+	
+	//
+	//Generate CSS
+	
+	$('#genCss').click(function (){
+		//var style = window.getComputedStyle($('#button_regular').get(0),null);
+		//alert(style);
+		//$('.main').style.cssText;
+	});
+	
+	$('#back').click(function(){
+		parent.history.back();
+		return false;
+	});
+	
+	//Dont let the form refresh my page :)
 	$("#buttonForm").submit(function(e) {
     e.preventDefault();
 });
+
+
 
 
 		

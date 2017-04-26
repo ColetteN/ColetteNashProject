@@ -87,15 +87,14 @@ $(document).ready(function(){
 			 slider.value + 'px');
 		}
 		
-	//Reset the border width button and the slider	
+	//Reset the border width and the slider	
 	$("#delete").click( function(){
 			$("#button_regular").css('border-width', '1px');
 			$("#border").slider({
 				value:1
    			});
 		});
-			
-			
+				
 		
 	//Changing the shadow of the border using the slider		
 		$("#shadow").slider({
@@ -113,19 +112,8 @@ $(document).ready(function(){
 		 slider.value + 'px');
 		}
 		
-		
-			
-			
-		//$("#button_regular").removeAttr("style")
-		
-		    //function deleteStyle(button_regular) {
-//       			$("." + button_regular).remove();
-//
-//    		}
-		
-			//$(".name").remove("#delete");
 	
-	//Change image on button	
+	//Chose an image for the button	
 	$(function () {
 		$('#wallpaper').on('change', function () {
 			var wallPaper = $('option:selected', this).val();

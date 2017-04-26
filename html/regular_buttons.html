@@ -53,8 +53,7 @@
     <main class="container">
         <div class="row">
             <div class="col-sm-6">         
-                <div id="button_regular"></div>   
-                <!--<div id="button_styler"></div>-->       
+                <div id="button_regular"></div>        
             </div>
             
             <div class="col-sm-6" id="styler">
@@ -66,22 +65,23 @@
                 <br>
                 	<div class="name">Border</div>
             		<div class="slider" id="border"></div>
-                    <button id="delete">Delete</button>
+                    <button id="resetBorder">Reset</button>
                 <br>
                 	<div class="name">Radius</div>
             		<div class="slider" id="radius"></div>
+                    <button id="resetRadius">Reset</button>
                 <br>
                 	<div class="name">Button Size</div>
             		<div class="slider" id="size"></div>
+                    <button id="resetSize">Reset</button>
                 <br>
                 	<div class="name">Font Size</div>
             		<div class="slider" id="font"></div>
+                    <button id="resetFont">Reset</button>
                 <br>
                 	<div class="name">Shadow</div>
             		<div class="slider" id="shadow"></div>
-                    <button id="delete">Delete</button>
-                    <!--/*<button onclick="deleteStyle('shadow');">Delete</button>*/-->
-                     
+                    
                 <br>
                 	<div class="name">Wallpaper</div>
                         <select id="wallpaper">
@@ -100,6 +100,8 @@
         </div>
                     
     </main>
+    
+    /*Needed to put this script here for the jscolor plugin to work*/
     <script>
 		function update(jscolor) {
 			document.getElementById('button_regular').style.backgroundColor='#' + jscolor;

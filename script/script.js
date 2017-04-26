@@ -20,16 +20,7 @@ $(document).ready(function(){
 		$( "#button_regular" ).resizable();
 		$( "#button_regular" ).draggable();
 		});
-		
-		//$( "#button_regular" ).resizable({
-//   		stop: function(event, ui) { ... }
-//     	// not 100% sure it'll be event.target that you want,
-//     	// inspect in console to double-check
-//     	var width = $(event.target).width();
-//     	var height = $(event.target).height();
-//     	// do stuff with width & height
-//});
-		
+
 		
 
 	//Changing the border on the button using the slider		
@@ -87,8 +78,8 @@ $(document).ready(function(){
 			 slider.value + 'px');
 		}
 		
-	//Reset the border width and the slider	
-	$("#delete").click( function(){
+	//Reset the border width and the slider to default value	
+	$("#resetBorder").click( function(){
 			$("#button_regular").css('border-width', '1px');
 			$("#border").slider({
 				value:1

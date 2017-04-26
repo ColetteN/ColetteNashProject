@@ -164,6 +164,8 @@ var valText="Click Me"
 	//Generate CSS
 	
 	$('#genCss').click(function (){
+		var style = css($(".main"));
+		$("#areaCss").css(style);
 		//var style = window.getComputedStyle($('#button_regular').get(0),null);
 		//alert(style);
 		//$('.main').style.cssText;

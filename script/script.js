@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$("#text").keyup(function(){
 			var valText = $(this).val();
 			$("#button_regular").text(valText);
+			$("#button_regular").css('text-align','center');
 		});
 	
 	//Changes the size of the button by dragging with the mouse or by touch using the resizable() method
@@ -143,7 +144,7 @@ $(document).ready(function(){
 	});
 	
 	//
-	//Chose font family for the button	
+	//Choose font family for the button	
 	$(function () {
 		$('#fontFamily').on('change', function () {
 		$('#button_regular').css("font-family", $(this).val());

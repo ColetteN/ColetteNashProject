@@ -1,4 +1,4 @@
-//Pretty Buttons JavaScript; Colette Nash K00212038
+//Pretty Buttons Project Colette Nash K00212038
 
 $(document).ready(function(){ 
 
@@ -162,8 +162,10 @@ var valText="Click Me"
 	
 	//
 	//Generate CSS
-	
-	//$('#genCss').click(function (){
+	$('#genCss').click(function (){
+		$('#areaCss').html('This functionality is not working!');
+		});
+		
 //		var style = css($(".main"));
 //		$("#areaCss").css(style);
 		//var style = window.getComputedStyle($('#button_regular').get(0),null);
@@ -179,12 +181,7 @@ var valText="Click Me"
 	//Dont let the form refresh my page :)
 	$("#buttonForm").submit(function(e) {
     e.preventDefault();
-});
-
-
-
-
-		
+});	
 
 });	
 

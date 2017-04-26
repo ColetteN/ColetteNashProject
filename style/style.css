@@ -29,10 +29,6 @@ figure
 	font-size: 24px;
 	padding-top: 40px;
 }
-footer
-{
-	/*padding-top: 60px;*/
-}
 header
 {
 	padding-top: 20px;
@@ -42,8 +38,8 @@ header
 /*The styling section*/
 #button_regular
 {
-	width: 120px;
-	height:60px;
+	width: 140px;
+	height:80px;
 	padding:15px;
 	background-color:#e0e0eb;
 	/*text-align: center;*/
@@ -79,12 +75,10 @@ form input
 	width:200px;
 	height:30px;
 }
-
 #areaHtml
 {
 	margin-left: 55%;
 }
-
 #areaCss
 {
 	margin-left: 55%;

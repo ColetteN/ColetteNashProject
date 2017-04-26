@@ -133,12 +133,20 @@ $(document).ready(function(){
    			});
 		});
 		
-	
+	//
 	//Chose an image for the button	
 	$(function () {
 		$('#wallpaper').on('change', function () {
 			var wallPaper = $('option:selected', this).val();
 			$('#button_regular').css('background-image', 'url(' + wallPaper + ')');
+		});
+	});
+	
+	//
+	//Chose font family for the button	
+	$(function () {
+		$('#fontFamily').on('change', function () {
+		$('#button_regular').css("font-family", $(this).val());
 		});
 	});
 	

@@ -80,6 +80,16 @@
             		<div class="slider" id="font"></div>
                     <button id="resetFont">Reset</button>
                 <br>
+                
+                
+                <div class="name">Font Style</div>
+                        <select id="fontFamily">
+                        	<option value="Arial">Arial</option>
+        					<option value="Verdana ">Verdana </option>
+        					<option value="Impact ">Impact </option>
+        					<option value="Comic Sans MS">Comic Sans MS</option>
+                        </select>
+                <br><br>
                 	
                     <div class="name">Shadow</div>
             		<div class="slider" id="shadow" ></div>
@@ -96,15 +106,16 @@
 					<div class="name">Colour</div>
                			<input class="jscolor {onFineChange:'update(this)'}" value="ab2567" id="colour">
                 <br>
-            </div>   
-            
-            <button type="button" id="embedCode">Embed Code</button><br>
+            </div>
+               
+            <br>
+            	<button type="button" id="embedCode">Embed Code</button><br>
             
         </div>
                     
     </main>
     
-    <!--Needed to put this script here for the jscolor plugin to work-->
+    <!--Had to put this script here for the jscolor plugin to work-->
     <script>
 		function update(jscolor) {
 			document.getElementById('button_regular').style.backgroundColor='#' + jscolor;

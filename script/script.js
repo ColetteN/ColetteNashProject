@@ -2,7 +2,7 @@
 
 $(document).ready(function(){ 
 
-//Global Variable for the button text
+//Global Variable for the button text used for the dynamic text and to generate html
 var valText="Click Me"
  
 	//creates the button and puts an initial text on it
@@ -22,7 +22,7 @@ var valText="Click Me"
 		$( "#button_regular" ).draggable();
 		});
 	
-
+	//
 	//Changing the border radius on the button using the slider		
 		$("#radius").slider({
 			animate:"fast",
@@ -111,7 +111,7 @@ var valText="Click Me"
    			});
 		});
 				
-		
+	//	
 	//Changing the shadow of the border using the slider		
 		$("#shadow").slider({
 			animate:"fast",
@@ -163,13 +163,13 @@ var valText="Click Me"
 	//
 	//Generate CSS
 	
-	$('#genCss').click(function (){
-		var style = css($(".main"));
-		$("#areaCss").css(style);
+	//$('#genCss').click(function (){
+//		var style = css($(".main"));
+//		$("#areaCss").css(style);
 		//var style = window.getComputedStyle($('#button_regular').get(0),null);
 		//alert(style);
 		//$('.main').style.cssText;
-	});
+	//});
 	
 	$('#back').click(function(){
 		parent.history.back();

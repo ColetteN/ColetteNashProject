@@ -2,7 +2,7 @@
 
 $(document).ready(function(){ 
 
-//Global Variable for the button text used for the dynamic text and to generate html
+//Global Variable for the button text used for the dynamic text creation and to generate html
 var valText="Click Me"
  
 	//creates the button and puts an initial text on it

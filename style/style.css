@@ -10,7 +10,7 @@ header h1
 {
 	text-align: center;
 	font-size: 40px;
-	color: #800060;	
+	color: #800060;
 }
 h2
 {
@@ -43,11 +43,14 @@ header
 	padding:15px;
 	background-color:#e0e0eb;
 	/*text-align: center;*/
-	margin-left: 40%;
 	font-size: 20px;
 	color: black;
 	font-weight:4px;
 	border: solid 1px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*position: fixed;*/
 }
 .slider
 {
@@ -77,17 +80,17 @@ form input
 }
 #areaHtml
 {
-	margin-left: 55%;
+	margin-left: 0%;
+}
+#genHtml
+{
+	margin-left: 0%;
 }
 #areaCss
 {
-	margin-left: 55%;
+	margin-left: 0%;
 }
-
-
-
-
-
-
-
-
+#genCss
+{
+	margin-left: 0%;
+}
